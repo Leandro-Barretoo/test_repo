@@ -1,0 +1,46 @@
+Started GET "/cars" for ::1 at 2021-02-05 09:52:10 +0000
+  [1m[35m (19.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cars"):
+  
+Started GET "/" for ::1 at 2021-02-05 09:52:15 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/leandro/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/leandro/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.8ms | Allocations: 227)
+Completed 200 OK in 30ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 2470)
+
+
+Started GET "/" for ::1 at 2021-02-05 09:58:51 +0000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/leandro/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/leandro/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.2ms | Allocations: 419)
+Completed 200 OK in 28ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 3090)
+
+
+Started GET "/articles" for ::1 at 2021-02-05 09:59:05 +0000
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/leandro/Desktop/test/blog/public/packs
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 3512ms
+Built at: 02/05/2021 9:59:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6008.9ms | Allocations: 14065)
+Completed 200 OK in 6013ms (Views: 6012.1ms | ActiveRecord: 0.0ms | Allocations: 15307)
+
+
